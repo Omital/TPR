@@ -3,6 +3,7 @@ using System.Data.Entity;
 using Abp.Zero.EntityFramework;
 using TPR.Authorization.Roles;
 using TPR.Authorization.Users;
+using TPR.Basics;
 using TPR.MultiTenancy;
 
 namespace TPR.EntityFramework
@@ -10,6 +11,8 @@ namespace TPR.EntityFramework
     public class TPRDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
         //TODO: Define an IDbSet for your Entities...
+
+        public virtual IDbSet<Report> Reports { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.

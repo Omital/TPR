@@ -228,6 +228,10 @@
   <ItemGroup>
     <Compile Include="EntityFramework\TPRDbContext.cs" />
     <Compile Include="EntityFramework\Repositories\TPRRepositoryBase.cs" />
+    <Compile Include="Migrations\202003170546416_addReportEntity.cs" />
+    <Compile Include="Migrations\202003170546416_addReportEntity.designer.cs">
+      <DependentUpon>202003170546416_addReportEntity.cs</DependentUpon>
+    </Compile>
     <Compile Include="TPRDataModule.cs" />
     <Compile Include="Migrations\201809270654064_InitialMigrations.cs" />
     <Compile Include="Migrations\201809270654064_InitialMigrations.Designer.cs">
@@ -320,6 +324,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002201201162_Ugraded_To_ABP_5_2_0.resx">
       <DependentUpon>202002201201162_Ugraded_To_ABP_5_2_0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003170546416_addReportEntity.resx">
+      <DependentUpon>202003170546416_addReportEntity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

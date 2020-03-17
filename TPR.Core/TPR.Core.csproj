@@ -207,6 +207,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Basics\Report.cs" />
     <Compile Include="TPRConsts.cs" />
     <Compile Include="TPRCoreModule.cs" />
     <Compile Include="AppVersionHelper.cs" />
